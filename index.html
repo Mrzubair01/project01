@@ -44,6 +44,7 @@
 #myname{
   color: transparent;
     -webkit-text-stroke: 1px #000;
+    transition: background-color 1s ease, transform 1s ease;
 }
 #myname::selection{
   background-color: #000;
@@ -52,8 +53,11 @@
 #myname:hover{
   color: #fff;
   background-color: #000;
+  transform: scale(1.05);
 }
-
+.my-link {
+      text-decoration: none;
+}
     </style>
 </head>
 
@@ -245,8 +249,10 @@
       <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 mt-5 border-top">
         <div class="col mb-3">
 
-          <p class="text-body-secondary " > <b><em class="auto-input">Instagram :           </em>👇 </p></b>
-          <h4 class="text-body-secondary"><b id="myname">@mr.zubair__01</b></h4>
+          <p class="text-body-secondary " > <b><em class="auto-input">Instagram : </em>👇 </p></b>
+          <h4 class="text-body-secondary"><a class="my-link" href="https://www.instagram.com/mr.zubair__01/"
+              target="_blank">
+              <b id="myname">@mr.zubair__01</b></a></h4>
         </div>
 
         <div class="col mb-3">
